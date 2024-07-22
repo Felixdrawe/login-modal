@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Rokkitt:wght@400;700&display=swap"
-      rel="stylesheet" />
+   <link
+  href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet"
+/>
 
     <!-- <style>
       * {
@@ -21,15 +22,12 @@
     <main
       class="flex flex-col items-center justify-center h-screen bg-rose-50 font-mulish p-4">
       <article
-        class="w-full max-w-md bg-white shadow-lg rounded-lg p-8 flex flex-col space-y-6 relative">
-        <!--Login Header-->
-
-        <h1 class="text-3xl font-bold font-rokkitt">Log In</h1>
+        class="w-full max-w-md bg-white shadow-lg rounded-lg relative md:flex  md:space-y-0 md:space-x-4 md:max-w-4xl ">
         <button
-          class="flex group items-center justify-center bg-gray-200 hover:-translate-y-1 transition absolute top-2 right-4 p-2 rounded-full hover:bg-opacity-90">
+          class="flex group items-center justify-center bg-gray-200 md:bg-white hover:-translate-y-1 transition absolute top-6 right-4 p-2 rounded-full hover:bg-opacity-90">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-black group-hover:text-gray-600"
+            class="w-6 h-6 text-black group-hover:text-gray-600 "
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
@@ -41,24 +39,25 @@
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         </button>
-
+    <section class="p-8 flex flex-col space-y-6  ">
+        <h1 class="text-3xl font-bold font-rokkitt">Log In</h1>
+    
         <p class="text-gray-600 font-thin">
           Log in to your account to upload or download pictures, videos or
           music.
         </p>
-
         <div>
           <input
             type="email"
             placeholder="Enter your email address "
             class="w-full border border-gray-400 rounded-lg p-6 mt-8 font-thin" />
         </div>
-
+        <div class=" flex flex-col space-y-3  md:flex-row md:space-y-0 md:space-x-4 justify-between gap-4 ">
         <p class="text-cyan-700 font-thin self-center cursor-pointer">
           Forgot password
         </p>
         <button
-          class="mt-4 w-full bg-cyan-700 hover:bg-opacity-90 hover:-translate-y-1 focus:ring-2 transition focus:outline-none focus:ring-offset-2 rounded-lg p-6 font-thin text-white hover:shadow-lg">
+          class=" w-full md:w-1/2 bg-cyan-700 hover:bg-opacity-90 hover:-translate-y-1 focus:ring-2 transition focus:outline-none focus:ring-offset-2 rounded-lg p-6 font-thin text-white hover:shadow-lg">
           <span class="flex items-center justify-center space-x-4">
             <span>Next</span>
             <svg
@@ -77,14 +76,24 @@
             </svg>
           </span>
         </button>
-        <div class="h-px bg-gray-200 my-4"></div>
+        </div>
+        <div class="h-px bg-gray-200 "></div>
         <p class="text-center text-gray-400 font-thin">or log in with</p>
-        <button>
-          <span class="flex items-center justify-center space-x-4">
-            <span>Google</span>
-           <img src="./images/google.png" alt="" class="w-9">
-
+        <div class=" flex flex-col space-y-3  md:flex-row md:space-y-0 md:space-x-4 justify-center gap-4">
+          <button class="border border-gray-400 rounded-lg p-2 font-thin text-white hover:shadow-lg hover:-translate-y-1 transition">
+          <span class="flex items-center justify-center space-x-4 mx-4">
+               <img src="./images/facebook.png" alt="" class="w-9">
+            <span class="font-thin text-gray-600">Facebook</span>
         </button>
+           <button class="border border-gray-400 rounded-lg p-2 font-thin text-white hover:shadow-lg hover:-translate-y-1 transition">
+          <span class="flex items-center justify-center space-x-4 mx-4">
+               <img src="./images/google.png" alt="" class="w-9">
+            <span class="font-thin text-gray-600">Google</span>
+        </button>
+        </section>
+        <div  class=" hidden md:flex ">
+      <img src="images/image.jpg" alt="" class="w-[480px] h-auto object-cover rounded-br-lg rounded-tr-lg">
+      </div>
       </article>
     </main>
   </body>
