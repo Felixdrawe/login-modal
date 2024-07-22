@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Rokkitt:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- <style>
+      * {
+        outline: 0.1px solid red;
+      }
+    </style> -->
+
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <main
+      class="flex flex-col items-center justify-center h-screen bg-rose-50 font-mulish p-4">
+      <article
+        class="w-full max-w-md bg-white shadow-lg rounded-lg p-8 flex flex-col space-y-6 relative">
+        <!--Login Header-->
+
+        <h1 class="text-3xl font-bold font-rokkitt">Log In</h1>
+        <button
+          class="flex group items-center justify-center bg-gray-200 hover:-translate-y-1 transition absolute top-2 right-4 p-2 rounded-full hover:bg-opacity-90">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+
+        <p class="text-gray-600 font-thin">
+          Log in to your account to upload or download pictures, videos or
+          music.
+        </p>
+
+        <div>
+          <input
+            type="email"
+            placeholder="Enter your email address "
+            class="w-full border border-gray-400 rounded-lg p-6 mt-8 font-thin" />
+        </div>
+
+        <p class="text-cyan-700 font-thin self-center cursor-pointer">
+          Forgot password
+        </p>
+        <button
+          class="mt-4 w-full bg-cyan-700 hover:bg-opacity-90 hover:-translate-y-1 focus:ring-2 transition focus:outline-none focus:ring-offset-2 rounded-lg p-6 font-thin text-white hover:shadow-lg">
+          <span class="flex items-center justify-center space-x-4">
+            <span>Next</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-7"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <line x1="13" y1="18" x2="19" y2="12"></line>
+              <line x1="13" y1="6" x2="19" y2="12"></line>
+            </svg>
+          </span>
+        </button>
+        <div class="h-px bg-gray-200 my-4"></div>
+        <p class="text-center text-gray-400 font-thin">or log in with</p>
+      </article>
+    </main>
+  </body>
+</html>
