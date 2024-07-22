@@ -1,6 +1,5 @@
 # Tailwind Login Modal
 
-Link
 
 [Live Demo](https://felixdrawe.github.io/login-modal/)
 
